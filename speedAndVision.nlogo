@@ -124,7 +124,7 @@ to move-rabbits
       face nearest-of burrows
       if any? burrows-here
       [
-       hatch-rabbits ((random 2) + 1)
+       hatch-rabbits ((random 3) + 1)
        [
 
           let tmp (random 2)
@@ -223,7 +223,7 @@ num-of-berries
 num-of-berries
 0
 100
-1.0
+12.0
 1
 1
 NIL
@@ -384,6 +384,25 @@ count rabbits with [vision > global-trait-points / 2]
 17
 1
 11
+
+PLOT
+237
+470
+1088
+806
+traits
+average points per trait
+ticks
+0.0
+10.0
+0.0
+10.0
+true
+true
+"" ""
+PENS
+"speed" 1.0 0 -2674135 true "" "plot sum [speed] of rabbits / count rabbits"
+"vision" 1.0 0 -13840069 true "" "plot sum [speed] of rabbits / count rabbits"
 
 @#$#@#$#@
 ## WHAT IS IT?
@@ -747,7 +766,7 @@ false
 Polygon -7500403 true true 270 75 225 30 30 225 75 270
 Polygon -7500403 true true 30 75 75 30 270 225 225 270
 @#$#@#$#@
-NetLogo 6.1.1
+NetLogo 6.0.1
 @#$#@#$#@
 @#$#@#$#@
 @#$#@#$#@
